@@ -4,13 +4,10 @@ $(document).ready(function(){
       for (i =0; i < inputSentence.length; i++) {
         if (inputSentence[i].match("[aeiouAEIOU]")) {
           inputSentence = inputSentence.substring(0, i) + "-" + inputSentence.substring(i+1);
-
-        }
       }
-      $("#outputSentence").show();
-      $("#sentenceGuess").append(inputSentence);
-      event.preventDefault();
+    }
+    $("#outputSentence").show();
+    $("#sentenceGuess").append(inputSentence);
+    event.preventDefault();
   });
-
-
 });
